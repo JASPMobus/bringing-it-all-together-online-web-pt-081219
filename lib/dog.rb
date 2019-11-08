@@ -46,4 +46,6 @@ class Dog
     sql = <<-SQL
       UPDATE dogs SET name = ?, grade = ? WHERE id = ?
       SQL
+    
+    
 end

@@ -91,4 +91,6 @@ class Dog
       self.new_from_db(found.first)
     end
   end
+  
+  def self.find_by_name(name)
 end

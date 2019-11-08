@@ -83,6 +83,6 @@ class Dog
       SELECT * FROM dogs WHERE name = ? AND breed = ?
       SQL
       
-    DB[:conn].execute(sql, attrs[:name], attrs[:breed])
+    found = DB[:conn].execute(sql, attrs[:name], attrs[:breed])
   end
 end

@@ -7,4 +7,10 @@ class Dog
     @name = attrs[:name]
     @breed = attrs[:breed]
   end
+  
+  def self.create_table
+    sql = <<-SQL
+    
+      SQL
+    end
 end

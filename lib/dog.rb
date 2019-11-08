@@ -93,4 +93,15 @@ class Dog
   end
   
   def self.find_by_name(name)
+    sql = <<-SQL
+      SELECT * FROM dogs WHERE name = ? AND breed = ?
+      SQL
+      
+    found = DB[:conn].execute(sql, attrs[:name], attrs[:breed])
+    
+    if found == []
+      self.create(attrs)
+    else
+      self.new_from_db(found.first)
+    end
 end

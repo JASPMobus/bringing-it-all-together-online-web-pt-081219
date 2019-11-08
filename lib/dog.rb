@@ -85,7 +85,7 @@ class Dog
       
     found = DB[:conn].execute(sql, attrs[:name], attrs[:breed]).first
     
-    if found == []
+    if found
       self.create(attrs)
     else
       self.new_from_db(found)

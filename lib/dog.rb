@@ -52,7 +52,7 @@ class Dog
     DB[:conn].execute(sql, @name, @breed, self.id)
   end
   
-  def create(attrs)
+  def self.create(attrs)
     new_dog = Dog.new(attrs)
     
     new_dog.save

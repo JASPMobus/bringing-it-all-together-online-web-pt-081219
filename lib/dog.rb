@@ -104,4 +104,5 @@ class Dog
     else
       self.new_from_db(found.first)
     end
+  end
 end

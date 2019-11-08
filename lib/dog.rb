@@ -87,5 +87,6 @@ class Dog
     
     if found == []
       self.create(attrs)
+    else
   end
 end

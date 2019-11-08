@@ -67,6 +67,6 @@ class Dog
       breed: row[2]
     }
     
-    new_dog = Dog.new(row)
+    new_dog = Dog.new(row_hash)
   end
 end

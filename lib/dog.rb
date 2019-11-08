@@ -97,7 +97,7 @@ class Dog
       SELECT * FROM dogs WHERE name = ?
       SQL
       
-    found = DB[:conn].execute(sql, name
+    found = DB[:conn].execute(sql, name)
     
     if found == []
       self.create(attrs)

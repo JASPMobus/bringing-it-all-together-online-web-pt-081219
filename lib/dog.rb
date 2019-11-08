@@ -98,11 +98,5 @@ class Dog
       SQL
       
     self.new_from_db([:conn].execute(sql, name).first)
-    
-    if found == []
-      self.create(attrs)
-    else
-      found.first)
-    end
   end
 end

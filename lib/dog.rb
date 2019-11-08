@@ -32,5 +32,7 @@ class Dog
     if @id
       self.update
     else
-      
+      sql = <<-SQL
+        UPDATE 
+        SQL
 end

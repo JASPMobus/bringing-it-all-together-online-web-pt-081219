@@ -17,6 +17,6 @@ class Dog
       );
       SQL
     
-    DB[]
+    DB[:conn]
   end
 end

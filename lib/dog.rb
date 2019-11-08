@@ -88,5 +88,7 @@ class Dog
     if found == []
       self.create(attrs)
     else
+      self.new_from_db(found)
+    end
   end
 end

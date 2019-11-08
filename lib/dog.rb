@@ -33,6 +33,6 @@ class Dog
       self.update
     else
       sql = <<-SQL
-        UPDATE 
+        INSERT INTO dogs (name, breed) VALUES (?, ?)
         SQL
 end

@@ -84,5 +84,8 @@ class Dog
       SQL
       
     found = DB[:conn].execute(sql, attrs[:name], attrs[:breed])
+    
+    if found == []
+      self.create(attrs)
   end
 end

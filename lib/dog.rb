@@ -17,4 +17,5 @@ class Dog
       );
       SQL
     end
+  end
 end
